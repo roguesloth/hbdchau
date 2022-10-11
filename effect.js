@@ -187,7 +187,8 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==24){
+			//if(i==24){
+				if(i==4){
 				console.log(i);
 				$("p:nth-child(23)").fadeOut('slow').promise().done(function () {
 					var audio = $('.song')[0];
@@ -228,7 +229,8 @@ $('document').ready(function(){
 	$('#play_video').click(function(){
 		console.log("Play Video");
 	    $('#video').fadeIn('slow');
-	    document.getElementById('video').play();
+	    //document.getElementById('video').play();
+		$(this).fadeOut('slow');
    });
 
 

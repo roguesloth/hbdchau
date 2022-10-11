@@ -1285,6 +1285,28 @@ audio {
 	font-weight: bold;
 }
 
+.play-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+  }
+  .play-overlay video {
+	/* Make video to at least 100% wide and tall */
+	max-height: 90%; 
+	/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+	width: auto;
+	height: auto;
+	/* Center the video */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  }
+
+
+
 .btn-primary {
         border-color: #466baf;
         padding: 10px;
